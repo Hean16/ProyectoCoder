@@ -429,9 +429,9 @@ body{
     flex-wrap: wrap;
 }
 .img-i-bioma{
-    width: 24%;
+    width: 28%;
     height: 200px;
-    margin: 2rem 2rem;
+    margin: 1rem .8rem;
     overflow: hidden;
     position: relative;
     cursor: pointer;
