@@ -304,6 +304,111 @@ body{
     }
 }
 
+/*AMENAZAS INDEX*/
+
+.sct-amenazas{
+    /* outline: 1px solid black;; */
+    width: 85%;
+    margin: auto;
+    height: 500px;
+    padding: .1px;
+    text-align: center;
+}
+.titulo-index-amnzs{
+    text-align: center;
+    margin: 2rem 0;
+}
+.cards-index-amz{
+    display: flex;
+    height: 66%;
+}
+.card-index-amz{
+    text-align: center;
+    
+}
+.card-ind-index-amz{
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    background-color: #dcd8d8;
+    border-radius: 12px;
+}
+.card-ind-index-amz h3{
+    padding-top: 1rem;
+}
+.card-ind-index-amz div p{
+    margin-top: 1rem;
+}
+.card-ind-index-amz img{
+    width: 75%;
+    padding-top: 1rem;
+    height: 50%;
+}
+.card-index-amz:nth-child(3) .card-ind-index-amz img{
+    width: 55%;
+}
+.btnn-index-amz{
+    margin: 2.5rem;
+    
+}
+.btn-index-amz{
+    text-decoration: none;
+    color: #fff;
+    padding: .4rem 1.5rem;
+    border: 4px solid green;
+    border-radius: 10px;
+    background-color: green;
+}
+
+/*AMENAZAS RESPONSIVE INDEX*/
+
+@media screen and (max-width: 1200px){
+    .card-ind-index-amz div p{
+        margin-top: 1rem;
+        font-size: .85rem;
+    }
+}
+@media (max-width: 800px){
+    .card-ind-index-amz{
+        width: 85%;
+        height: 100%;
+        margin: auto;
+        background-color: #dcd8d8;
+        border-radius: 12px;
+    }
+}
+@media (max-width: 550px){
+    .cards-index-amz{
+        flex-wrap: wrap;
+    }
+    .sct-amenazas{
+        /* outline: 1px solid black;; */
+        width: 90%;
+        height: 1200px;
+
+    }
+    .cards-index-amz{
+        /* outline: 1px solid black; */
+        display: flex;
+        height: 86%;
+    }
+    .card-ind-index-amz{
+        width: 55%;
+        height: 80%;
+    }
+    .card-ind-index-amz img{
+        width: 60%;
+        padding-top: 1rem;
+        height: 40%;
+    }
+    .card-index-amz:nth-child(3) .card-ind-index-amz img{
+        width: 50%;
+    }
+    .btnn-index-amz{
+        margin: 1rem;
+    }
+}
+
 
 /* PAGINA GRID MATERIALES */
 
@@ -727,6 +832,7 @@ body{
 .footer_grid-materiales{
     height: 250px;
 }
+
 
 
 
