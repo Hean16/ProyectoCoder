@@ -1,0 +1,159 @@
+.container-mat{
+    width: $wfll - 15;
+    height: 31.2rem;
+    margin: $rem+2.5 auto 0;
+    display: grid;
+    grid-template-columns: 1fr .5fr 1fr;
+    background-color: $mesacraft;
+    padding-top: .1px;
+    @media (max-width: 550px){
+        width: $wfll - 10;
+        height: 60rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr .2fr 1fr;
+    }
+    .materiales{
+        text-align: center;
+        h2{
+            margin-top: $rem * 2;
+            font-weight: bold;
+        }
+        .materiales_grid{
+            width: $wfll - 5;
+            height: $rem +17;
+            margin: $rem+1.8 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: .7rem;
+            @media (max-width: 550px){
+                margin: $rem+1.8 auto 0;
+            }
+            .item_material{
+                /* outline: 1px solid black; */
+                background-color: $bgmat;
+                border: 4px solid;
+                border-color: $brdmat $white $white $brdmat;
+                img{
+                    width: $wfll;
+                    height: 100%;
+                }
+            }
+            .sq1{
+                grid-area: 2 / 1 / 3 / 2;
+            }
+            .sq2{
+                grid-area: 1 / 2 / 2 / 3;
+            }
+            .sq3{
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            .sq4{
+                grid-area: 3 / 2 / 4 / 3;
+            }
+            .sq5{
+                grid-area: 1 / 3 / 2 / 4;
+            }
+            .sq6{
+                grid-area: 2 / 3 / 3 / 4;
+            }
+            .sq7{
+                grid-area: 3 / 3 / 4 / 4;
+            }
+            .sq8{
+                grid-area: 1 / 4 / 2 / 5;
+            }
+            .sq9{
+                grid-area: 2 / 4 / 3 / 5;
+            }
+            .sq10{
+                grid-area: 3 / 4 / 4 / 5;
+            }
+        }
+    }
+    .img_flecha{
+        width: $wfll - 50;
+        margin: auto;
+        @media (max-width: 550px){
+            width: $wfll - 75;
+            height: 5.5rem;
+            margin: 0 auto;
+            transform: rotate(90deg);
+        }
+        .flecha{
+            width: $wfll;
+        }
+    }
+    .def_mat{
+        @extend %dsflexfll;
+        @media (max-width: 550px){
+            align-items: flex-start;
+        }
+        .parr_mater{
+            width: $wfll - 10;
+            height: 60%;
+            line-height: $rem + .2;
+            text-align: center;
+            position: relative;
+            @extend %dsflex;
+            flex-direction: column;
+            background-color: $bgmat;
+            border: 4px solid;
+            border-color: $brdmat $white $white $brdmat;
+            font-family: $ff-minecraft;
+            font-size: $rem + .5;
+            font-weight: bold;
+            color: rgba($black, 0.65);
+            overflow-y: auto;
+            @media (max-width: 800px){
+                font-size: $rem;
+            }
+            @media (max-width: 550px){
+                height: 65%;
+                margin-top: $rem + 1;
+            }
+            &:hover .hover_mat{
+                transform: scale(1);
+            }
+            .hover_mat{
+                width: $wfll;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                @extend %dsflexfll;
+                background-color: hsla(12, 80%, 37%, 0.856);
+                transform: scale(0);
+                transition: transform 1s ease;
+                @media (max-width: 550px){
+                    width: $wfll;
+                    height: 28%;
+                    position: relative;
+                    background-color: hsla(12, 80%, 37%, 0);
+                    transform: scale(1);
+                }
+                a{
+                    text-decoration: $non;
+                    color: $white;
+                    padding: 0.6rem $rem;
+                    border: 3px solid $white;
+                    border-radius: $rem - .5;
+                    transition: 1s;
+                    font-weight: normal;
+                    @media (max-width: 550px){
+                        background-color: hsla(12, 80%, 37%, 0.945);
+                        border: 3px solid hsla(12, 80%, 37%, 0.856);
+                    }
+                    &:hover{
+                        background-color: $white;
+                        color: hsla(12, 80%, 37%, 0.801);
+                        @media (max-width: 550px){
+                            background-color: hsl(12, 85%, 32%);
+                            color: $white; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

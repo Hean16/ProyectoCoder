@@ -1,6 +1,12 @@
-header {
+.container-mat .def_mat .parr_mater, .hdr {
   display: flex;
   justify-content: center;
+}
+
+.container-mat .def_mat .parr_mater .hover_mat, .container-mat .def_mat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 * {
@@ -11,15 +17,15 @@ header {
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #000000;
+  background-color: #141414;
 }
 
-header {
+.hdr {
   width: 100%;
   height: 600px;
   position: relative;
 }
-header nav {
+.hdr nav {
   background: rgba(0, 0, 0, 0.18);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(13.5px);
@@ -36,31 +42,31 @@ header nav {
   z-index: 10010;
 }
 @media screen and (max-width: 800px) {
-  header nav {
+  .hdr nav {
     border: 1px solid rgba(255, 255, 255, 0.18);
     width: 90%;
     position: fixed;
   }
 }
-header nav div {
+.hdr nav div {
   width: 9.5rem;
   margin-left: 2rem;
 }
 @media screen and (max-width: 800px) {
-  header nav div {
+  .hdr nav div {
     margin: auto;
   }
 }
-header nav div img {
+.hdr nav div img {
   width: 100%;
 }
-header nav ul {
+.hdr nav ul {
   display: flex;
   list-style: none;
   margin-right: 2rem;
 }
 @media screen and (max-width: 800px) {
-  header nav ul {
+  .hdr nav ul {
     position: absolute;
     top: 2.3rem;
     left: 0;
@@ -72,27 +78,27 @@ header nav ul {
     z-index: 1000;
   }
 }
-header nav ul li {
+.hdr nav ul li {
   margin: 1rem;
 }
 @media screen and (max-width: 800px) {
-  header nav ul li {
+  .hdr nav ul li {
     margin: 0;
   }
 }
-header nav ul li a {
+.hdr nav ul li a {
   text-decoration: none;
   color: #000000;
   transition: 0.5s;
   font-family: "Merriweather", serif;
   font-size: 1rem;
 }
-header nav ul li a:hover {
+.hdr nav ul li a:hover {
   color: #fff;
   text-decoration: underline;
 }
 @media screen and (max-width: 800px) {
-  header nav ul li a {
+  .hdr nav ul li a {
     text-align: center;
     color: #fff;
     display: block;
@@ -111,6 +117,179 @@ header nav ul li a:hover {
 @media screen and (max-width: 800px) {
   .header {
     background-image: url(/Imagenes/header_mobile.webp);
+  }
+}
+
+.container-mat {
+  width: 85%;
+  height: 31.2rem;
+  margin: 3.5rem auto 0;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr;
+  background-color: #c6c6c6;
+  padding-top: 0.1px;
+}
+@media (max-width: 550px) {
+  .container-mat {
+    width: 90%;
+    height: 60rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.2fr 1fr;
+  }
+}
+.container-mat .materiales {
+  text-align: center;
+}
+.container-mat .materiales h2 {
+  margin-top: 2rem;
+  font-weight: bold;
+}
+.container-mat .materiales .materiales_grid {
+  width: 95%;
+  height: 18rem;
+  margin: 2.8rem auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0.7rem;
+}
+@media (max-width: 550px) {
+  .container-mat .materiales .materiales_grid {
+    margin: 2.8rem auto 0;
+  }
+}
+.container-mat .materiales .materiales_grid .item_material {
+  /* outline: 1px solid black; */
+  background-color: #939083;
+  border: 4px solid;
+  border-color: #4f4030 #fff #fff #4f4030;
+}
+.container-mat .materiales .materiales_grid .item_material img {
+  width: 100%;
+  height: 100%;
+}
+.container-mat .materiales .materiales_grid .sq1 {
+  grid-area: 2/1/3/2;
+}
+.container-mat .materiales .materiales_grid .sq2 {
+  grid-area: 1/2/2/3;
+}
+.container-mat .materiales .materiales_grid .sq3 {
+  grid-area: 2/2/3/3;
+}
+.container-mat .materiales .materiales_grid .sq4 {
+  grid-area: 3/2/4/3;
+}
+.container-mat .materiales .materiales_grid .sq5 {
+  grid-area: 1/3/2/4;
+}
+.container-mat .materiales .materiales_grid .sq6 {
+  grid-area: 2/3/3/4;
+}
+.container-mat .materiales .materiales_grid .sq7 {
+  grid-area: 3/3/4/4;
+}
+.container-mat .materiales .materiales_grid .sq8 {
+  grid-area: 1/4/2/5;
+}
+.container-mat .materiales .materiales_grid .sq9 {
+  grid-area: 2/4/3/5;
+}
+.container-mat .materiales .materiales_grid .sq10 {
+  grid-area: 3/4/4/5;
+}
+.container-mat .img_flecha {
+  width: 50%;
+  margin: auto;
+}
+@media (max-width: 550px) {
+  .container-mat .img_flecha {
+    width: 25%;
+    height: 5.5rem;
+    margin: 0 auto;
+    transform: rotate(90deg);
+  }
+}
+.container-mat .img_flecha .flecha {
+  width: 100%;
+}
+@media (max-width: 550px) {
+  .container-mat .def_mat {
+    align-items: flex-start;
+  }
+}
+.container-mat .def_mat .parr_mater {
+  width: 90%;
+  height: 60%;
+  line-height: 1.2rem;
+  text-align: center;
+  position: relative;
+  flex-direction: column;
+  background-color: #939083;
+  border: 4px solid;
+  border-color: #4f4030 #fff #fff #4f4030;
+  font-family: "VT323", monospace;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.65);
+  overflow-y: auto;
+}
+@media (max-width: 800px) {
+  .container-mat .def_mat .parr_mater {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 550px) {
+  .container-mat .def_mat .parr_mater {
+    height: 65%;
+    margin-top: 2rem;
+  }
+}
+.container-mat .def_mat .parr_mater:hover .hover_mat {
+  transform: scale(1);
+}
+.container-mat .def_mat .parr_mater .hover_mat {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: hsla(12deg, 80%, 37%, 0.856);
+  transform: scale(0);
+  transition: transform 1s ease;
+}
+@media (max-width: 550px) {
+  .container-mat .def_mat .parr_mater .hover_mat {
+    width: 100%;
+    height: 28%;
+    position: relative;
+    background-color: hsla(12deg, 80%, 37%, 0);
+    transform: scale(1);
+  }
+}
+.container-mat .def_mat .parr_mater .hover_mat a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border: 3px solid #fff;
+  border-radius: 0.5rem;
+  transition: 1s;
+  font-weight: normal;
+}
+@media (max-width: 550px) {
+  .container-mat .def_mat .parr_mater .hover_mat a {
+    background-color: hsla(12deg, 80%, 37%, 0.945);
+    border: 3px solid hsla(12deg, 80%, 37%, 0.856);
+  }
+}
+.container-mat .def_mat .parr_mater .hover_mat a:hover {
+  background-color: #fff;
+  color: hsla(12deg, 80%, 37%, 0.801);
+}
+@media (max-width: 550px) {
+  .container-mat .def_mat .parr_mater .hover_mat a:hover {
+    background-color: hsl(12deg, 85%, 32%);
+    color: #fff;
   }
 }
 

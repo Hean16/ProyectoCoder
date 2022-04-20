@@ -5,5 +5,5 @@
 }
 body{
     font-family: $ff-body;
-    background-color: $black;
+    background-color: lighten($black, 8%);
 }
