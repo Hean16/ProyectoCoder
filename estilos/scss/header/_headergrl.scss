@@ -1,16 +1,8 @@
-.header{
+header{
     width: $wfll;
-    height: $hvar * 5;
+    height: $hvar * 6;
     position: relative;
     @extend %dsflex;
-    background-image: url(/Imagenes/header.webp);
-    background-size: cover;
-    background-position: bottom;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    @media screen and (max-width: 800px) {
-        background-image: url(/Imagenes/header_mobile.webp);
-    }
     nav{
         background: rgba($black, 0.18);
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -80,5 +72,15 @@
                 }
             }
         }
+    }
+}
+.header{
+    background-image: url(/Imagenes/header.webp);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    @media screen and (max-width: 800px) {
+        background-image: url(/Imagenes/header_mobile.webp);
     }
 }
