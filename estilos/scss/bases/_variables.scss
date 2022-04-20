@@ -1,0 +1,13 @@
+$wfll: 100%;
+$hvar: 100px;
+$non: none;
+$rem: 1rem;
+%dsflex{
+    display: flex;
+    justify-content: center;
+}
+%dsflexfll{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
