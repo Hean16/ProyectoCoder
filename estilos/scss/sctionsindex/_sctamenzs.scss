@@ -1,6 +1,7 @@
 .sct-amenazas{
     width: $wfll;
     text-align: center; 
+    margin-bottom: -1rem;
     // position: relative;
     .mncsct{
         width: $wfll;
@@ -13,7 +14,7 @@
         width: $wfll;
         position: relative;
         top: -$rem + .5;
-        height: 620px;
+        height: 610px;
         padding-top: .1rem;
         @media screen and (max-width: 550px){
             height: 1200px;
@@ -28,7 +29,7 @@
             margin: auto;
             display: flex;
             height: 400px;
-            margin-bottom: $rem + 2;
+            margin-bottom: $rem +1;
             @media screen and (max-width: 845px){
                 width: $wfll;
                 height: 430px;
@@ -95,6 +96,7 @@
             padding: .6rem 1.2rem;
             background-color: green;
             border-radius: 8px;
+            margin-bottom: 4rem;
         }
     }
 }

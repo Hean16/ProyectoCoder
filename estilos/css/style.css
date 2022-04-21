@@ -3,7 +3,7 @@
   justify-content: center;
 }
 
-.container-mat .def_mat .parr_mater .hover_mat, .container-mat .def_mat {
+.sct-biomas .galeria-index-biomas .img-i-bioma .hover-i-bioma, .container-mat .def_mat .parr_mater .hover_mat, .container-mat .def_mat {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -295,6 +295,7 @@ body {
 .sct-amenazas {
   width: 100%;
   text-align: center;
+  margin-bottom: -1rem;
 }
 .sct-amenazas .mncsct {
   width: 100%;
@@ -307,7 +308,7 @@ body {
   width: 100%;
   position: relative;
   top: -0.5rem;
-  height: 620px;
+  height: 610px;
   padding-top: 0.1rem;
 }
 @media screen and (max-width: 550px) {
@@ -325,7 +326,7 @@ body {
   margin: auto;
   display: flex;
   height: 400px;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 @media screen and (max-width: 845px) {
   .sct-amenazas .cards-index .cards-index-amnz {
@@ -403,6 +404,153 @@ body {
   padding: 0.6rem 1.2rem;
   background-color: green;
   border-radius: 8px;
+  margin-bottom: 4rem;
+}
+
+.sct-biomas {
+  background-image: url(/Imagenes/bgminecraft.png);
+  text-align: center;
+  height: 570px;
+  position: relative;
+  padding-top: 1rem;
+}
+@media screen and (max-width: 750px) {
+  .sct-biomas {
+    height: 1200px;
+  }
+}
+@media screen and (max-width: 345px) {
+  .sct-biomas {
+    height: 1800px;
+  }
+}
+.sct-biomas h2 {
+  color: #cccccc;
+  margin-top: 1.5rem;
+  padding: 2rem 0;
+}
+@media screen and (max-width: 750px) {
+  .sct-biomas h2 {
+    padding: 1rem 0;
+  }
+}
+.sct-biomas .galeria-index-biomas {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 400px;
+  margin: auto;
+}
+@media screen and (max-width: 1000px) {
+  .sct-biomas .galeria-index-biomas {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .sct-biomas .galeria-index-biomas {
+    height: 1000px;
+  }
+}
+.sct-biomas .galeria-index-biomas .img-i-bioma {
+  width: 27%;
+  position: relative;
+  margin: 1rem;
+  display: block;
+  object-fit: cover;
+  overflow: hidden;
+  cursor: pointer;
+}
+@media screen and (max-width: 750px) {
+  .sct-biomas .galeria-index-biomas .img-i-bioma {
+    width: 40%;
+    height: 18%;
+    margin: 4rem 1rem;
+    overflow: visible;
+  }
+}
+@media screen and (max-width: 500px) {
+  .sct-biomas .galeria-index-biomas .img-i-bioma {
+    height: 12%;
+    margin: 1rem 1rem;
+  }
+}
+@media screen and (max-width: 345px) {
+  .sct-biomas .galeria-index-biomas .img-i-bioma {
+    margin-bottom: 9rem;
+  }
+}
+.sct-biomas .galeria-index-biomas .img-i-bioma img {
+  width: 100%;
+  height: 100%;
+}
+.sct-biomas .galeria-index-biomas .img-i-bioma .hover-i-bioma {
+  font-family: "VT323", monospace;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(6, 174, 6, 0.616);
+  transform: scale(0);
+  transition: transform 1s;
+  flex-direction: column;
+}
+@media screen and (max-width: 750px) {
+  .sct-biomas .galeria-index-biomas .img-i-bioma .hover-i-bioma {
+    position: relative;
+    transform: scale(1);
+    height: 60%;
+    background-color: rgba(6, 174, 6, 0);
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .sct-biomas .galeria-index-biomas .img-i-bioma .hover-i-bioma {
+    margin-top: 3rem;
+  }
+}
+@media screen and (max-width: 345px) {
+  .sct-biomas .galeria-index-biomas .img-i-bioma .hover-i-bioma {
+    margin-bottom: 1rem;
+  }
+}
+.sct-biomas .galeria-index-biomas .img-i-bioma h3 {
+  color: #552202;
+  margin-bottom: 0.5rem;
+  font-size: 2.2rem;
+}
+@media screen and (max-width: 750px) {
+  .sct-biomas .galeria-index-biomas .img-i-bioma h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.2rem;
+    color: #fff;
+  }
+}
+@media screen and (max-width: 500px) {
+  .sct-biomas .galeria-index-biomas .img-i-bioma h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+  }
+}
+.sct-biomas .galeria-index-biomas .img-i-bioma p {
+  color: #552202;
+  font-size: 1.1rem;
+}
+@media screen and (max-width: 750px) {
+  .sct-biomas .galeria-index-biomas .img-i-bioma p {
+    color: #fff;
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .sct-biomas .galeria-index-biomas .img-i-bioma p {
+    font-size: 0.8rem;
+  }
+}
+.sct-biomas .galeria-index-biomas .img-i-bioma:hover .hover-i-bioma {
+  transform: scale(1);
 }
 
 /*# sourceMappingURL=style.css.map */
