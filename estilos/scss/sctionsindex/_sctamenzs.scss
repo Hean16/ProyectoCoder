@@ -1,0 +1,100 @@
+.sct-amenazas{
+    width: $wfll;
+    text-align: center; 
+    // position: relative;
+    .mncsct{
+        width: $wfll;
+        img{
+            width: $wfll;
+        }
+    }
+    .cards-index{
+        background-image: url(/Imagenes/bgminecraft.png);
+        width: $wfll;
+        position: relative;
+        top: -$rem + .5;
+        height: 620px;
+        padding-top: .1rem;
+        @media screen and (max-width: 550px){
+            height: 1200px;
+        }
+        h2{
+            text-align: center;
+            color: darken($white, 20);
+            margin: $rem +1.5 0;
+        }
+        .cards-index-amnz{
+            width: $wfll - 20;
+            margin: auto;
+            display: flex;
+            height: 400px;
+            margin-bottom: $rem + 2;
+            @media screen and (max-width: 845px){
+                width: $wfll;
+                height: 430px;
+            }
+            @media screen and (max-width: 550px){
+                flex-direction: column;
+                height: 85%;
+                margin-bottom: $rem + .5;
+            }
+            .card-index-amz{
+                @media screen and (max-width: 550px){
+                    margin: $rem auto;
+                    height: 30%;
+                    
+                }
+                .card-ind-index-amz{
+                    width: $wfll - 25;
+                    height: 100%;
+                    margin: auto;
+                    text-align: center;
+                    border-radius: 10px;
+                    background-color: darken($white, 20);
+                    @media screen and (max-width: 845px){
+                        width: $wfll - 12;
+                    }
+                    @media screen and (max-width: 550px){
+                        width: $wfll - 50;
+                    }
+                    @media screen and (max-width: 375px){
+                        width: $wfll - 40;
+                    }
+                    h3{
+                        color: lighten($black, 15);
+                    }
+                    img{
+                        width: $wfll - 25;
+                        margin: $rem auto;
+                        height: 50%;
+                    }
+                    p{  
+                        margin-top: .5rem;
+                        font-size: $rem + .1;
+                        @media screen and (max-width: 550px){
+                            font-size: .9rem;
+                        }
+                        @media screen and (max-width: 375px){
+                            font-size: .8rem;
+                        }
+                    }
+                }
+                &:nth-child(1) img{
+                    width: 55%;
+
+                }
+                &:nth-child(3) img{
+                    width: 50%;
+                }
+            }
+            
+        }
+        a{
+            text-decoration: $non;
+            color: $white;
+            padding: .6rem 1.2rem;
+            background-color: green;
+            border-radius: 8px;
+        }
+    }
+}

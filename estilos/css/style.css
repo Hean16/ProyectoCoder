@@ -17,7 +17,6 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #141414;
 }
 
 .hdr {
@@ -291,6 +290,119 @@ body {
     background-color: hsl(12deg, 85%, 32%);
     color: #fff;
   }
+}
+
+.sct-amenazas {
+  width: 100%;
+  text-align: center;
+}
+.sct-amenazas .mncsct {
+  width: 100%;
+}
+.sct-amenazas .mncsct img {
+  width: 100%;
+}
+.sct-amenazas .cards-index {
+  background-image: url(/Imagenes/bgminecraft.png);
+  width: 100%;
+  position: relative;
+  top: -0.5rem;
+  height: 620px;
+  padding-top: 0.1rem;
+}
+@media screen and (max-width: 550px) {
+  .sct-amenazas .cards-index {
+    height: 1200px;
+  }
+}
+.sct-amenazas .cards-index h2 {
+  text-align: center;
+  color: #cccccc;
+  margin: 2.5rem 0;
+}
+.sct-amenazas .cards-index .cards-index-amnz {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  height: 400px;
+  margin-bottom: 3rem;
+}
+@media screen and (max-width: 845px) {
+  .sct-amenazas .cards-index .cards-index-amnz {
+    width: 100%;
+    height: 430px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .sct-amenazas .cards-index .cards-index-amnz {
+    flex-direction: column;
+    height: 85%;
+    margin-bottom: 1.5rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .sct-amenazas .cards-index .cards-index-amnz .card-index-amz {
+    margin: 1rem auto;
+    height: 30%;
+  }
+}
+.sct-amenazas .cards-index .cards-index-amnz .card-index-amz .card-ind-index-amz {
+  width: 75%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #cccccc;
+}
+@media screen and (max-width: 845px) {
+  .sct-amenazas .cards-index .cards-index-amnz .card-index-amz .card-ind-index-amz {
+    width: 88%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .sct-amenazas .cards-index .cards-index-amnz .card-index-amz .card-ind-index-amz {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .sct-amenazas .cards-index .cards-index-amnz .card-index-amz .card-ind-index-amz {
+    width: 60%;
+  }
+}
+.sct-amenazas .cards-index .cards-index-amnz .card-index-amz .card-ind-index-amz h3 {
+  color: #262626;
+}
+.sct-amenazas .cards-index .cards-index-amnz .card-index-amz .card-ind-index-amz img {
+  width: 75%;
+  margin: 1rem auto;
+  height: 50%;
+}
+.sct-amenazas .cards-index .cards-index-amnz .card-index-amz .card-ind-index-amz p {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+@media screen and (max-width: 550px) {
+  .sct-amenazas .cards-index .cards-index-amnz .card-index-amz .card-ind-index-amz p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .sct-amenazas .cards-index .cards-index-amnz .card-index-amz .card-ind-index-amz p {
+    font-size: 0.8rem;
+  }
+}
+.sct-amenazas .cards-index .cards-index-amnz .card-index-amz:nth-child(1) img {
+  width: 55%;
+}
+.sct-amenazas .cards-index .cards-index-amnz .card-index-amz:nth-child(3) img {
+  width: 50%;
+}
+.sct-amenazas .cards-index a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  background-color: green;
+  border-radius: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */
