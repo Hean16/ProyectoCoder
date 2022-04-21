@@ -4,8 +4,8 @@
     position: relative;
     @extend %dsflex;
     nav{
-        background: rgba($black, 0.18);
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        background: rgba($black, 0.40);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.529);
         backdrop-filter: blur( 13.5px );
         -webkit-backdrop-filter: blur( 13.5px );
         border-radius: 10px;
@@ -54,7 +54,7 @@
                 }
                 a{
                     text-decoration: $non;
-                    color: $green;
+                    color: $navff;
                     transition: .5s;
                     font-family: $ff-nav;
                     font-size: 1rem;
