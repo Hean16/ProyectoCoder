@@ -82,5 +82,14 @@
     background-repeat: no-repeat;
     @media screen and (max-width: 800px) {
         background-image: url(/Imagenes/header_mobile.webp);
+        background-size: contain;
+        background-position: top;
+        height: 350px;
+    }
+    @media screen and (max-width: 600px){
+        height: 240px;
+    }
+    @media screen and (max-width: 400px){
+        height: 200px;
     }
 }

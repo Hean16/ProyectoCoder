@@ -1,0 +1,144 @@
+.contsection-gamepass{
+    background-image: url(/Imagenes/GamePass/bgscthaloo.png);
+    background-size: cover;
+    width: $wfll;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    @media screen and (max-width: 900px){
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    @media screen and (max-width: 600px){
+        height: 500px;
+        align-items: flex-start;
+    }
+    @media screen and (max-width: 450px){
+        height: 400px;
+    }
+    .text-sct-gamepass{
+        width: 40%;
+        height: 70%;
+        // background-color: blue;
+        margin-left: 2rem;
+        @media screen and (max-width: 750px) {
+            width: 50%;
+        }
+        @media screen and (max-width: 600px){
+            margin-top: 1.5rem;
+        }
+        @media screen and (max-width: 450px){
+            margin-top: 1rem;
+        }
+        h2{
+            color: $white;
+            font-size: 2.5rem;
+            font-weight: bold;
+            letter-spacing: .15rem;
+            line-height: 2.5rem;
+            @media screen and (max-width: 900px){
+                font-size: 2rem;
+                letter-spacing: .1rem;
+                line-height: 2.2rem;
+            }
+            @media screen and (max-width: 750px){
+                font-size: 1.5rem;
+                letter-spacing: .05rem;
+                line-height: 1.8rem;
+            }
+            @media screen and (max-width: 450px){
+                font-size: 1rem;
+                letter-spacing: 0;
+                line-height: 1rem;
+            }
+        }
+        h3{
+            color: $white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            position: relative;
+            display: inline-block;
+            margin-top: .7rem;
+            margin-bottom: 1.5rem;
+            &::after{
+                content: '';
+                display: inline-block;
+                width: 100%;
+                height: .2rem;
+                background-color: green;
+                position: absolute;
+                bottom: 0;
+                left: 0;   
+            }
+            @media screen and (max-width: 900px){
+                font-size: 1.2rem;
+                margin-top: .5rem;
+                margin-bottom: 1rem;
+            }
+            @media screen and (max-width: 750px){
+                font-size: 1rem;
+                margin-top: .3rem;
+                margin-bottom: .7rem;
+            }
+            @media screen and (max-width: 450px){
+                font-size: .7rem;
+                margin-top: .15rem;
+                margin-bottom: .4rem;
+            }
+        }
+        .servic-sct-gamepass{
+            width: 100%;
+            height: 60%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-gap: 2rem;
+            margin: 2.5rem 0;
+            @media screen and (max-width: 900px){
+                height: 50%;
+                grid-gap: .5rem;
+                margin: 1rem 0;
+            }
+            @media screen and (max-width: 450px){
+                height: 40%;
+                grid-gap: .2rem;
+                margin: .8rem 0;
+            }
+            .serv-sct-gamepass{
+                height: inherit;
+                img{
+                    height: 70%;
+                    margin-bottom: 1rem;
+                    @media screen and (max-width: 900px){
+                        height: 50%;
+                        margin-bottom: .7rem;
+                    }
+                }
+                p{
+                    color: $white;
+                    font-size: 1rem;
+                    @media screen and (max-width: 750px){
+                        font-size: .7rem;
+                    }
+                    @media screen and (max-width: 450px){
+                        font-size: .5rem;
+                    }
+                }
+                &:nth-child(3) img{
+                    height: 50%;
+                    @media screen and (max-width: 900px){
+                        height: 35%;
+                    }
+                }
+                &:nth-child(4) img{
+                    height: 50%;
+                    @media screen and (max-width: 900px){
+                        height: 35%;
+                    }
+                }
+            }
+        }
+    }
+}
