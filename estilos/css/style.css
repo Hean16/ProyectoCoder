@@ -3,7 +3,7 @@
   justify-content: center;
 }
 
-.sct-biomas .galeria-index-biomas .img-i-bioma .hover-i-bioma, .container-mat .def_mat .parr_mater .hover_mat, .container-mat .def_mat {
+.footer_grid .slist_footer, .sct-biomas .galeria-index-biomas .img-i-bioma .hover-i-bioma, .container-mat .def_mat .parr_mater .hover_mat, .container-mat .def_mat {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -745,6 +745,159 @@ body {
 @media screen and (max-width: 900px) {
   .contsection-gamepass .text-sct-gamepass .servic-sct-gamepass .serv-sct-gamepass:nth-child(4) img {
     height: 35%;
+  }
+}
+
+.footer_grid {
+  display: grid;
+  grid-template-areas: "first second third";
+  height: 200px;
+  background-color: #3f3f3f;
+}
+@media screen and (max-width: 500px) {
+  .footer_grid {
+    grid-template-areas: "first third" "second second";
+    height: 300px;
+  }
+}
+.footer_grid .flist_footer {
+  grid-area: first;
+  padding-left: 2rem;
+  padding-top: 0.8rem;
+  color: #fff;
+}
+@media screen and (max-width: 500px) {
+  .footer_grid .flist_footer h2 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  .footer_grid .flist_footer h2 {
+    font-size: 0.9rem;
+  }
+}
+.footer_grid .flist_footer ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+.footer_grid .flist_footer ul li {
+  margin-bottom: 0.7rem;
+  font-size: 1.2rem;
+}
+.footer_grid .flist_footer ul li:nth-child(1) ion-icon {
+  color: #3b5998;
+}
+.footer_grid .flist_footer ul li:nth-child(2) ion-icon {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f09433", endColorstr="#bc1888",GradientType=1 );
+  border-radius: 5px;
+}
+.footer_grid .flist_footer ul li:nth-child(3) ion-icon {
+  color: #00acee;
+}
+@media screen and (max-width: 500px) {
+  .footer_grid .flist_footer ul li {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  .footer_grid .flist_footer ul li {
+    font-size: 0.7rem;
+  }
+}
+.footer_grid .slist_footer {
+  grid-area: second;
+  flex-direction: column;
+}
+@media screen and (max-width: 500px) {
+  .footer_grid .slist_footer {
+    margin-bottom: 2rem;
+  }
+}
+.footer_grid .slist_footer ul {
+  display: flex;
+  list-style: none;
+}
+.footer_grid .slist_footer ul li {
+  margin: 0.4rem 1rem;
+  font-size: 2.5rem;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 1s;
+}
+.footer_grid .slist_footer ul li:nth-child(1) ion-icon {
+  color: #7EB900;
+}
+.footer_grid .slist_footer ul li:nth-child(2) ion-icon {
+  color: #fff;
+}
+.footer_grid .slist_footer ul li:nth-child(3) ion-icon {
+  color: red;
+}
+.footer_grid .slist_footer ul li:hover {
+  transform: scale(1.5) translateY(-0.8rem);
+}
+@media screen and (max-width: 380px) {
+  .footer_grid .slist_footer ul li {
+    font-size: 2rem;
+  }
+}
+.footer_grid .slist_footer h4 {
+  color: #fff;
+  font-weight: 400;
+}
+@media screen and (max-width: 780px) {
+  .footer_grid .slist_footer h4 {
+    font-size: 0.7rem;
+    font-weight: 700;
+  }
+}
+@media screen and (max-width: 380px) {
+  .footer_grid .slist_footer h4 {
+    font-size: 0.6rem;
+  }
+}
+.footer_grid .slist_footer div {
+  margin-top: 0.7rem;
+}
+.footer_grid .slist_footer div a {
+  color: #fefefe;
+  margin: 0 1rem;
+}
+@media screen and (max-width: 780px) {
+  .footer_grid .slist_footer div a {
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 380px) {
+  .footer_grid .slist_footer div a {
+    font-size: 0.6rem;
+  }
+}
+.footer_grid .tlist_footer {
+  grid-area: third;
+  display: flex;
+  justify-content: flex-end;
+}
+.footer_grid .tlist_footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 2rem;
+  padding-top: 0.8rem;
+}
+.footer_grid .tlist_footer ul li {
+  margin-bottom: 1rem;
+}
+.footer_grid .tlist_footer ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+@media screen and (max-width: 380px) {
+  .footer_grid .tlist_footer ul li a {
+    font-size: 0.9rem;
   }
 }
 
