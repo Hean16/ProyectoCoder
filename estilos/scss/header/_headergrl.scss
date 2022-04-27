@@ -80,6 +80,7 @@
     background-position: bottom;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    align-items: flex-end;
     @media screen and (max-width: 800px) {
         background-image: url(/Imagenes/header_mobile.webp);
         background-size: contain;
@@ -91,5 +92,36 @@
     }
     @media screen and (max-width: 400px){
         height: 200px;
+    }
+    .section_header{
+        margin-bottom: 10rem;
+        @include tblt(){
+            margin-bottom: 4rem;
+        }
+        @include movil(){
+            margin-bottom: 2.5rem;
+        }
+        button{
+            @include boton(9rem, 40px, rgba(114, 20, 34, 0), 6px, 3.8px, #721422);
+            a{
+                @include textboton(#721422, 1.2rem, bolder);
+                @include tblt(){
+                    color: white;
+                }
+            }
+            &::after{
+                @include afterboton(#721422, -40px, 2px);
+                @include tblt(){
+                    top: 0;
+                }
+            }
+            &:hover::after{
+                top: 0;
+            }
+            &:hover a{
+                color: white;
+            }
+
+        }
     }
 }

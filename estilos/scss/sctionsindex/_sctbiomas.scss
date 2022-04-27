@@ -1,7 +1,7 @@
 .sct-biomas{
     background-image: url(/Imagenes/bgminecraft.png);
     text-align: center;
-    height: 570px;
+    height: 650px;
     position: relative;
     padding-top: $rem;
     @media screen and (max-width: 750px){
@@ -26,6 +26,7 @@
         height: 400px;
         // background-color: red;
         margin: auto;
+        margin-bottom: 2rem;
         @media screen and (max-width: 1000px){
             width: $wfll - 5;
         }
@@ -113,6 +114,18 @@
                 transform: scale(1);
                 
             }
+        }
+    }
+    button{
+        @include boton(12rem, 40px, green, 6px, 1px, green);
+        &::after{
+            @include afterboton(rgb(0, 79, 0), -40px, 2px);
+        }
+        &:hover::after{
+            top: 0;
+        }
+        a{
+            @include textboton($white, 1rem, normal);
         }
     }
 }

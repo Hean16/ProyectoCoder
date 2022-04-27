@@ -112,6 +112,7 @@ body {
   background-position: bottom;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  align-items: flex-end;
 }
 @media screen and (max-width: 800px) {
   .header {
@@ -130,6 +131,68 @@ body {
   .header {
     height: 200px;
   }
+}
+.header .section_header {
+  margin-bottom: 10rem;
+}
+@media screen and (max-width: 775px) {
+  .header .section_header {
+    margin-bottom: 4rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .header .section_header {
+    margin-bottom: 2.5rem;
+  }
+}
+.header .section_header button {
+  width: 9rem;
+  height: 40px;
+  background-color: rgba(114, 20, 34, 0);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 6px;
+  border: 3.8px solid #721422;
+  overflow: hidden;
+  cursor: pointer;
+}
+.header .section_header button a {
+  text-decoration: none;
+  z-index: 2;
+  color: #721422;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  transition: color 1.8s ease-out;
+}
+@media screen and (max-width: 775px) {
+  .header .section_header button a {
+    color: white;
+  }
+}
+.header .section_header button::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #721422;
+  position: absolute;
+  top: -40px;
+  left: 0;
+  z-index: 1;
+  transition: top 1s ease-in-out;
+  border-radius: 2px;
+}
+@media screen and (max-width: 775px) {
+  .header .section_header button::after {
+    top: 0;
+  }
+}
+.header .section_header button:hover::after {
+  top: 0;
+}
+.header .section_header button:hover a {
+  color: white;
 }
 
 .container-mat {
@@ -308,7 +371,7 @@ body {
 .sct-amenazas {
   width: 100%;
   text-align: center;
-  margin-bottom: -1rem;
+  margin-bottom: -0.5rem;
 }
 .sct-amenazas .mncsct {
   width: 100%;
@@ -411,19 +474,47 @@ body {
 .sct-amenazas .cards-index .cards-index-amnz .card-index-amz:nth-child(3) img {
   width: 50%;
 }
-.sct-amenazas .cards-index a {
-  text-decoration: none;
-  color: #fff;
-  padding: 0.6rem 1.2rem;
+.sct-amenazas .cards-index button {
+  width: 9rem;
+  height: 36px;
   background-color: green;
-  border-radius: 8px;
-  margin-bottom: 4rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 6px;
+  border: 1px solid green;
+  overflow: hidden;
+  cursor: pointer;
+}
+.sct-amenazas .cards-index button::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 79, 0);
+  position: absolute;
+  top: -36px;
+  left: 0;
+  z-index: 1;
+  transition: top 1s ease-in-out;
+  border-radius: 2px;
+}
+.sct-amenazas .cards-index button:hover::after {
+  top: 0;
+}
+.sct-amenazas .cards-index button a {
+  text-decoration: none;
+  z-index: 2;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: normal;
+  transition: color 1.8s ease-out;
 }
 
 .sct-biomas {
   background-image: url(/Imagenes/bgminecraft.png);
   text-align: center;
-  height: 570px;
+  height: 650px;
   position: relative;
   padding-top: 1rem;
 }
@@ -454,6 +545,7 @@ body {
   width: 80%;
   height: 400px;
   margin: auto;
+  margin-bottom: 2rem;
 }
 @media screen and (max-width: 1000px) {
   .sct-biomas .galeria-index-biomas {
@@ -564,6 +656,42 @@ body {
 }
 .sct-biomas .galeria-index-biomas .img-i-bioma:hover .hover-i-bioma {
   transform: scale(1);
+}
+.sct-biomas button {
+  width: 12rem;
+  height: 40px;
+  background-color: green;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 6px;
+  border: 1px solid green;
+  overflow: hidden;
+  cursor: pointer;
+}
+.sct-biomas button::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 79, 0);
+  position: absolute;
+  top: -40px;
+  left: 0;
+  z-index: 1;
+  transition: top 1s ease-in-out;
+  border-radius: 2px;
+}
+.sct-biomas button:hover::after {
+  top: 0;
+}
+.sct-biomas button a {
+  text-decoration: none;
+  z-index: 2;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: normal;
+  transition: color 1.8s ease-out;
 }
 
 .contsection-gamepass {

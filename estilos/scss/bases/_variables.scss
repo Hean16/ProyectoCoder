@@ -34,3 +34,36 @@ $brdmat: #4f4030;
         @content;
     }
 }
+@mixin boton($wit, $h, $bgc, $borr, $bh, $bc){
+    width: $wit;
+    height: $h;
+    background-color: $bgc;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: $borr;
+    border: $bh solid $bc;
+    overflow: hidden;
+    cursor: pointer;
+}
+@mixin textboton($ctext, $ttext, $wtext){
+    text-decoration: none;
+    z-index: 2;
+    color: $ctext;
+    font-size: $ttext;
+    font-weight: $wtext;
+    transition: color 1.8s ease-out;
+}
+@mixin afterboton($bgaft, $taft, $braft){
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: $bgaft;
+    position: absolute;
+    top: $taft;
+    left: 0;
+    z-index: 1;
+    transition: top 1s ease-in-out;
+    border-radius: $braft;
+}
