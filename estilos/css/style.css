@@ -901,4 +901,135 @@ body {
   }
 }
 
+.hdr-materiales {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2.5rem 5rem 0;
+  text-align: center;
+  position: relative;
+}
+@media screen and (max-width: 775px) {
+  .hdr-materiales {
+    padding: 4rem 1.5rem 1rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .hdr-materiales {
+    padding: 4rem 0.5rem 1rem;
+  }
+}
+.hdr-materiales .img-hdr-materiales {
+  width: 30%;
+  height: 20rem;
+  margin-right: 40px;
+  font-weight: bolder;
+}
+@media screen and (max-width: 775px) {
+  .hdr-materiales .img-hdr-materiales {
+    width: 66%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .hdr-materiales .img-hdr-materiales {
+    margin: auto;
+    width: 75%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .hdr-materiales .img-hdr-materiales {
+    width: 85%;
+  }
+}
+.hdr-materiales .img-hdr-materiales img {
+  width: 100%;
+  height: 100%;
+}
+.hdr-materiales .textos-hdr-materiales {
+  width: 55%;
+}
+@media screen and (max-width: 775px) {
+  .hdr-materiales .textos-hdr-materiales {
+    width: 42%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .hdr-materiales .textos-hdr-materiales {
+    position: absolute;
+    top: 50;
+    left: 50;
+  }
+}
+.hdr-materiales .textos-hdr-materiales h1 {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 775px) {
+  .hdr-materiales .textos-hdr-materiales h1 {
+    margin-bottom: 0.6rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .hdr-materiales .textos-hdr-materiales h1 {
+    transform: translateY(-1.5rem);
+    font-weight: bolder;
+    color: #fff;
+  }
+}
+.hdr-materiales .textos-hdr-materiales p {
+  line-height: 1.5rem;
+}
+@media screen and (max-width: 775px) {
+  .hdr-materiales .textos-hdr-materiales p {
+    line-height: 1rem;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .hdr-materiales .textos-hdr-materiales p {
+    display: none;
+  }
+}
+
+.main-materiales {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+.main-materiales .materiales-g-container {
+  width: 85%;
+  margin: auto;
+}
+.main-materiales .materiales-g-container h2 {
+  font-family: "VT323", monospace;
+  margin-bottom: 4.2rem;
+  font-size: 2rem;
+}
+.main-materiales .materiales-g-container .cards_materiales_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  column-gap: 8rem;
+  row-gap: 2.5rem;
+}
+.main-materiales .materiales-g-container .cards_materiales_grid .card_materiales {
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  border: 4px solid;
+  border-color: #4f4030 #000000 #000000 #4f4030;
+  transition: transform 0.6s ease-in-out;
+  cursor: pointer;
+}
+.main-materiales .materiales-g-container .cards_materiales_grid .card_materiales:hover {
+  transform: scale(1.2);
+}
+.main-materiales .materiales-g-container .cards_materiales_grid .card_materiales h3 {
+  margin-bottom: 1rem;
+}
+.main-materiales .materiales-g-container .cards_materiales_grid .card_materiales img {
+  width: 80%;
+  height: 60%;
+}
+
 /*# sourceMappingURL=style.css.map */
