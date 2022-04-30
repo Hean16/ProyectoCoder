@@ -14,11 +14,14 @@
         width: $wfll;
         position: relative;
         top: -$rem + .5;
-        height: 610px;
+        height: 640px;
         padding-top: .1rem;
-        @media screen and (max-width: 550px){
-            height: 1200px;
-        }
+       @include tblt{
+           height: 700px;
+       }
+       @include movilmedia{
+        height: 1400px;
+    }
         h2{
             text-align: center;
             color: darken($white, 20);
