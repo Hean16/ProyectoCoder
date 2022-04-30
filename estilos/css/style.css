@@ -1190,9 +1190,9 @@ body {
 }
 .main-materiales .materiales-g-container .cards_materiales_grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  column-gap: 8rem;
-  row-gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  column-gap: 5rem;
+  row-gap: 3rem;
 }
 .main-materiales .materiales-g-container .cards_materiales_grid .card_materiales {
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
