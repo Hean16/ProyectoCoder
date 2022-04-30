@@ -1,0 +1,169 @@
+.main-sect-uno{
+    background-image: url(/Imagenes/GamePass/bg-section.png);
+    height: 600px;
+    padding: .1px;
+    font-family: $ff-body;
+    @include tblt{
+        height: 520px;  
+    }
+    @include movilmedia{
+        height: 450px;
+    }
+    h3{
+        font-size: 2rem;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 7rem;
+        color: #2ea24d;
+        @include tblt{
+            font-size: 1.5rem;
+            margin-top: 7rem;
+        }
+        @include movilmedia{
+            font-size: 1.2rem;
+            margin-top: 6rem;
+        }
+    }
+    .cont-sect-uno{
+        padding-top: 4rem;
+        .col{
+            height: 15rem;
+            .personajes-mine{
+                width: 85%;
+                height: 100%;
+                text-align: center;
+                cursor: pointer;
+                transition: transform 1s;
+                @include tblt{
+                    width: 90%;
+                }
+                @include movilmedia{
+                    width: 100%;
+                }
+                img{
+                    width: 70%;
+                    height: 100%;
+                    @include tblt{
+                        width: 90%;
+                        height: 80%;
+                    }
+                    @include movilmedia{
+                        width: 95%;
+                        height: 60%;
+                    }
+                }
+                h4{
+                    color: $white;
+                    margin-top: 1.5rem;
+                    font-weight: bolder;
+                    transition: color .5s;
+                    @include tblt{
+                        color: $white;
+                        margin-top: 1rem;
+                    }
+                }
+                &:hover{
+                    transform: scale(1.2);
+                }
+                &:hover h4{
+                    color: #77BB44;
+                }
+                
+            }
+            &:nth-child(1){
+                @include movil{
+                    display: none;
+                }
+            }
+            &:nth-child(3) .personajes-mine img{
+                width: 55%;
+                @include tblt{
+                    width: 65%;
+                }
+                @include movilmedia{
+                    width: 76%;
+                }
+            }
+        }
+    }
+}
+
+.main-sect-dos{
+    width: 100%;
+    height: 650px;
+    background-image: url(/Imagenes/GamePass/bgHalo.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    @include tblt{
+        height: 820px;
+    }
+    .caratulas{
+        @include tblt{
+            flex-direction: column;
+            margin: 0;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .cards-contain{
+            @include tblt{
+                width: 100%;
+                margin: 0;
+                max-width: 1200px;
+                justify-content: space-between;
+            }
+            .card{
+                background-color: rgba(255, 255, 255, 0);
+                width: 13rem;
+                @include tblt{
+                    width: 10rem;
+                    height: 350px;
+                }
+                @include movilmedia{
+                    width: 8rem;
+                    height: 250px;
+                }
+                .bgi-card{
+                    background-image: url(/Imagenes/GamePass/bg-card-halo.webp);
+                    background-size: cover;
+                    h5{
+                        color: #fff;
+                        @include movilmedia{
+                            font-size: 1rem;
+                        }
+                    }
+                    h6{
+                        color: #fff;
+                        @include movilmedia{
+                            font-size: .7rem;
+                        }
+                    }
+                }
+            } 
+        } 
+        .resp-mob{
+            @include movilmedia{
+                position: relative;
+                top: 7rem;
+            }
+        } 
+    }
+    
+}
+/*SEGUNDO SECTION MAIN*/
+// @media screen and (max-width: 715px){
+//     .card{
+//         width: 8rem;
+//         height: 250px;
+//     } 
+//     .card-body h5{
+//         font-size: 1rem;
+//     }
+//     .card-body h6{
+//         font-size: .7rem;
+//     }
+//     .resp-mob{
+//         position: relative;
+//         top: 7rem;
+//     }
+// }

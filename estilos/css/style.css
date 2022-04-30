@@ -1,4 +1,4 @@
-.container-mat .def_mat .parr_mater, .hdr {
+.hdr-gamepss section .sobrepuesto-header .cards-sobr-header .crad-head, .hdr-gamepss section .sobrepuesto-header, .container-mat .def_mat .parr_mater, .hdr {
   display: flex;
   justify-content: center;
 }
@@ -1214,6 +1214,300 @@ body {
   height: 60%;
 }
 
+.hdr-gamepss .log {
+  width: 10rem;
+}
+.hdr-gamepss .log img {
+  width: 100%;
+}
+.hdr-gamepss section {
+  position: relative;
+}
+.hdr-gamepss section .carousel {
+  max-height: 36rem;
+}
+.hdr-gamepss section .carousel .carousel-indicators {
+  max-height: inherit;
+}
+.hdr-gamepss section .carousel .carousel-inner {
+  max-height: inherit;
+}
+.hdr-gamepss section .carousel .carousel-inner .carousel-item {
+  max-height: inherit;
+}
+.hdr-gamepss section .carousel .carousel-inner .carousel-item img {
+  max-height: inherit;
+}
+.hdr-gamepss section .carousel .carousel-inner .carousel-item:nth-child(2) img {
+  height: 100%;
+}
+.hdr-gamepss section .sobrepuesto-header {
+  width: 100%;
+  height: 10rem;
+  position: absolute;
+  bottom: -4.5rem;
+  left: 0;
+  z-index: 10000;
+}
+@media screen and (max-width: 775px) {
+  .hdr-gamepss section .sobrepuesto-header {
+    bottom: -6rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .hdr-gamepss section .sobrepuesto-header {
+    bottom: -8rem;
+  }
+}
+.hdr-gamepss section .sobrepuesto-header .cards-sobr-header {
+  width: 50%;
+  height: 100%;
+  background-color: #f4f4f4;
+  border: 1px solid #f4f4f4;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 14px 50px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 14px 50px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 14px 50px 1px rgba(0, 0, 0, 0.75);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  text-align: center;
+}
+@media screen and (max-width: 775px) {
+  .hdr-gamepss section .sobrepuesto-header .cards-sobr-header {
+    height: 8rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .hdr-gamepss section .sobrepuesto-header .cards-sobr-header {
+    height: 5rem;
+  }
+}
+.hdr-gamepss section .sobrepuesto-header .cards-sobr-header .crad-head {
+  position: relative;
+  height: 100%;
+  flex-direction: column;
+}
+.hdr-gamepss section .sobrepuesto-header .cards-sobr-header .crad-head a {
+  font-size: 3rem;
+  transition: transform 1s;
+}
+.hdr-gamepss section .sobrepuesto-header .cards-sobr-header .crad-head a:hover {
+  transform: scale(1.2) translateY(-1rem);
+}
+@media screen and (max-width: 775px) {
+  .hdr-gamepss section .sobrepuesto-header .cards-sobr-header .crad-head a {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .hdr-gamepss section .sobrepuesto-header .cards-sobr-header .crad-head a {
+    font-size: 1.5rem;
+  }
+}
+.hdr-gamepss section .sobrepuesto-header .cards-sobr-header .crad-head h2 {
+  font-size: 1rem;
+}
+@media screen and (max-width: 775px) {
+  .hdr-gamepss section .sobrepuesto-header .cards-sobr-header .crad-head h2 {
+    display: none;
+  }
+}
+.hdr-gamepss section .sobrepuesto-header .cards-sobr-header .crad-head:nth-child(1) a {
+  color: #77bb44;
+}
+.hdr-gamepss section .sobrepuesto-header .cards-sobr-header .crad-head:nth-child(2) a {
+  color: black;
+}
+.hdr-gamepss section .sobrepuesto-header .cards-sobr-header .crad-head:nth-child(3) a {
+  color: #107c10;
+}
+
+/*HEADER*/
+.main-sect-uno {
+  background-image: url(/Imagenes/GamePass/bg-section.png);
+  height: 600px;
+  padding: 0.1px;
+  font-family: "Roboto", sans-serif;
+}
+@media screen and (max-width: 775px) {
+  .main-sect-uno {
+    height: 520px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .main-sect-uno {
+    height: 450px;
+  }
+}
+.main-sect-uno h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 7rem;
+  color: #2ea24d;
+}
+@media screen and (max-width: 775px) {
+  .main-sect-uno h3 {
+    font-size: 1.5rem;
+    margin-top: 7rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .main-sect-uno h3 {
+    font-size: 1.2rem;
+    margin-top: 6rem;
+  }
+}
+.main-sect-uno .cont-sect-uno {
+  padding-top: 4rem;
+}
+.main-sect-uno .cont-sect-uno .col {
+  height: 15rem;
+}
+.main-sect-uno .cont-sect-uno .col .personajes-mine {
+  width: 85%;
+  height: 100%;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 1s;
+}
+@media screen and (max-width: 775px) {
+  .main-sect-uno .cont-sect-uno .col .personajes-mine {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .main-sect-uno .cont-sect-uno .col .personajes-mine {
+    width: 100%;
+  }
+}
+.main-sect-uno .cont-sect-uno .col .personajes-mine img {
+  width: 70%;
+  height: 100%;
+}
+@media screen and (max-width: 775px) {
+  .main-sect-uno .cont-sect-uno .col .personajes-mine img {
+    width: 90%;
+    height: 80%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .main-sect-uno .cont-sect-uno .col .personajes-mine img {
+    width: 95%;
+    height: 60%;
+  }
+}
+.main-sect-uno .cont-sect-uno .col .personajes-mine h4 {
+  color: #fff;
+  margin-top: 1.5rem;
+  font-weight: bolder;
+  transition: color 0.5s;
+}
+@media screen and (max-width: 775px) {
+  .main-sect-uno .cont-sect-uno .col .personajes-mine h4 {
+    color: #fff;
+    margin-top: 1rem;
+  }
+}
+.main-sect-uno .cont-sect-uno .col .personajes-mine:hover {
+  transform: scale(1.2);
+}
+.main-sect-uno .cont-sect-uno .col .personajes-mine:hover h4 {
+  color: #77BB44;
+}
+@media screen and (max-width: 450px) {
+  .main-sect-uno .cont-sect-uno .col:nth-child(1) {
+    display: none;
+  }
+}
+.main-sect-uno .cont-sect-uno .col:nth-child(3) .personajes-mine img {
+  width: 55%;
+}
+@media screen and (max-width: 775px) {
+  .main-sect-uno .cont-sect-uno .col:nth-child(3) .personajes-mine img {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .main-sect-uno .cont-sect-uno .col:nth-child(3) .personajes-mine img {
+    width: 76%;
+  }
+}
+
+.main-sect-dos {
+  width: 100%;
+  height: 650px;
+  background-image: url(/Imagenes/GamePass/bgHalo.webp);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+@media screen and (max-width: 775px) {
+  .main-sect-dos {
+    height: 820px;
+  }
+}
+@media screen and (max-width: 775px) {
+  .main-sect-dos .caratulas {
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    max-width: 1200px;
+  }
+}
+@media screen and (max-width: 775px) {
+  .main-sect-dos .caratulas .cards-contain {
+    width: 100%;
+    margin: 0;
+    max-width: 1200px;
+    justify-content: space-between;
+  }
+}
+.main-sect-dos .caratulas .cards-contain .card {
+  background-color: rgba(255, 255, 255, 0);
+  width: 13rem;
+}
+@media screen and (max-width: 775px) {
+  .main-sect-dos .caratulas .cards-contain .card {
+    width: 10rem;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .main-sect-dos .caratulas .cards-contain .card {
+    width: 8rem;
+    height: 250px;
+  }
+}
+.main-sect-dos .caratulas .cards-contain .card .bgi-card {
+  background-image: url(/Imagenes/GamePass/bg-card-halo.webp);
+  background-size: cover;
+}
+.main-sect-dos .caratulas .cards-contain .card .bgi-card h5 {
+  color: #fff;
+}
+@media screen and (max-width: 450px) {
+  .main-sect-dos .caratulas .cards-contain .card .bgi-card h5 {
+    font-size: 1rem;
+  }
+}
+.main-sect-dos .caratulas .cards-contain .card .bgi-card h6 {
+  color: #fff;
+}
+@media screen and (max-width: 450px) {
+  .main-sect-dos .caratulas .cards-contain .card .bgi-card h6 {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .main-sect-dos .caratulas .resp-mob {
+    position: relative;
+    top: 7rem;
+  }
+}
+
+/*SEGUNDO SECTION MAIN*/
 main h2 {
   text-align: center;
   font-family: "VT323", monospace;
