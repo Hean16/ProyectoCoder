@@ -107,6 +107,7 @@
                 @include textboton(#721422, 1.2rem, bolder);
                 @include tblt(){
                     color: white;
+                    background-color: #721422;
                 }
             }
             &::after{

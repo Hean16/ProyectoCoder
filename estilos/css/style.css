@@ -169,6 +169,7 @@ body {
 @media screen and (max-width: 775px) {
   .header .section_header button a {
     color: white;
+    background-color: #721422;
   }
 }
 .header .section_header button::after {
@@ -220,7 +221,6 @@ body {
   text-align: center;
 }
 .container-mat .materiales h2 {
-  margin-top: 2rem;
   font-weight: bold;
 }
 .container-mat .materiales .materiales_grid {
