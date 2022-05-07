@@ -59,6 +59,22 @@ body {
 .hdr nav div img {
   width: 100%;
 }
+.hdr nav button {
+  background: none;
+  border: none;
+  display: none;
+  cursor: pointer;
+}
+.hdr nav button ion-icon {
+  color: white;
+  font-size: 2.5rem;
+}
+@media screen and (max-width: 775px) {
+  .hdr nav button {
+    display: block;
+    margin-right: 3rem;
+  }
+}
 .hdr nav ul {
   display: flex;
   list-style: none;
@@ -67,14 +83,14 @@ body {
 @media screen and (max-width: 800px) {
   .hdr nav ul {
     position: absolute;
-    top: 2.3rem;
-    left: 0;
+    top: 3rem;
+    left: 110%;
     width: 100%;
-    display: none;
-    /* <===CAMBIAR POR BLOCK */
+    display: block;
     margin-right: 0;
     background-color: rgba(0, 0, 0, 0.4);
     z-index: 1000;
+    transition: 0.5s ease-in-out;
   }
 }
 .hdr nav ul li {
@@ -104,6 +120,10 @@ body {
     padding: 2rem 1rem;
     font-size: 1.5rem;
   }
+}
+.hdr nav .nav-header_visible {
+  left: 0;
+  transition: 0.5s ease-in-out;
 }
 
 .header {
