@@ -1,0 +1,104 @@
+.main-biomas{
+    @include tblt{
+        margin-top: 6rem;
+    }
+    .cont-biomas-bg{
+        position: relative;
+        width: 100%;
+        height: 550px;
+        @include tblt{
+            display: flex;
+            position: static;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 300px;
+            -webkit-box-shadow: 0px 12px 15px -11px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 12px 15px -11px rgba(0,0,0,0.75);
+            box-shadow: 0px 12px 15px -11px rgba(0,0,0,0.75)
+            // background-color: red; 
+        }
+        @include movilmedia{
+            height: 200px;
+        }
+        img{
+            width: inherit;
+            height: inherit;
+            @include tblt{
+                width: 50%;
+                height: 70%;
+            }
+            @include movilmedia{
+                width: 60%;
+                height: 70%;
+            }
+        }
+        .card-biomas-bg{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background-color: hsla(0, 100%, 50%, 0.041);
+            border: 3px solid #c7dfc7;
+            border-radius: 9px;
+            transform: translate(-50%, -50%);
+            width: 15rem;
+            height: 10rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            color: #c7dfc7;
+            cursor: pointer;
+            transition: 1s ease-in-out;
+            h3{
+                font-size: 2rem;
+                font-weight: bolder;
+                @include movilmedia{
+                    font-size: 1rem;
+                    font-weight: bolder;
+                }
+            }
+            p{
+                @include movilmedia{
+                    font-size: 0.8rem;
+                }
+            }
+            &:hover{
+                background-color: #d7d7a8;
+                color: black;
+            }
+            @include tblt{
+                position: static;
+                top: 0;
+                left: 0;
+                transform: translate(0, 0);
+                color: black;
+                border: none;
+                background-color: #fff;
+                &:hover{
+                    background-color: #fff;
+                    color: black;
+                }
+            }
+            
+        }
+        .card-biomas-bg-cong{
+            border:3px solid #393b3b;
+            color: #393b3b;
+            &:hover{
+                background-color: #393b3b;
+                color: #eef7f7;
+            }
+            @include tblt{
+                background-color: #fff;
+                color: black;
+                border: none;
+                &:hover{
+                    background-color: #fff;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
